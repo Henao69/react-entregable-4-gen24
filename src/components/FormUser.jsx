@@ -24,12 +24,14 @@ const FormUser = ({
     } else {
       createNewUser(data);
     }
-    setFormClose(true)
+    setFormClose(true);
     reset(defaultValues);
   };
 
   const handleExit = () => {
-    setFormClose(true)
+    setFormClose(true);
+    setUpdateInfo();
+    reset(defaultValues);
   }
 
   return (

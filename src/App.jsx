@@ -8,8 +8,8 @@ import ModalDelete from "./components/ModalDelete";
 function App() {
   const [updateInfo, setUpdateInfo] = useState();
   const [formClose, setFormClose] = useState(true);
-  const [deleteInfo, setDeleteInfo] = useState()
-  const [deleteUser, setDeleteUser] = useState(true)
+  const [deleteInfo, setDeleteInfo] = useState();
+  const [deleteUser, setDeleteUser] = useState(true);
 
   const { users, getAllUsers, createNewUser, deleteUserByID, updateUserByID } =
     useUserCrud();

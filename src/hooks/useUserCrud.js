@@ -5,7 +5,8 @@ const useUserCrud  = () => {
 
     const [users, setUsers] = useState()
 
-    const url = `https://users-crud.academlo.tech/users/`
+    // const url = `https://users-crud.academlo.tech/users/`
+    const url = `http://localhost:8080/api/v1/users/`
 
     //Get
     const getAllUsers = () => {
@@ -32,7 +33,7 @@ const useUserCrud  = () => {
     //Update
     const updateUserByID = (id, data) => {
         const urlUpdate = `${url}${id}/`
-        axios.patch(urlUpdate, data)
+        axios.put(urlUpdate, data)
           .then(res => getAllUsers())
           .catch(err => console.log(err))
     }
