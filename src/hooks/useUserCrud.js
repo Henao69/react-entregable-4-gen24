@@ -6,7 +6,7 @@ const useUserCrud  = () => {
     const [users, setUsers] = useState()
 
     // const url = `https://users-crud.academlo.tech/users/`
-    const url = `http://localhost:8080/api/v1/users/`
+    const url = `https://users-form-test.onrender.com/api/v1/users/`
 
     //Get
     const getAllUsers = () => {
